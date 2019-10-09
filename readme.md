@@ -1,5 +1,7 @@
 Introduction
 
+Please use a live server to serve these webpages.
+
 Exercise 1
 ---
 Build a responsive page based on the designs.
