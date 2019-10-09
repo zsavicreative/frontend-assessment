@@ -1,0 +1,57 @@
+$btn-color: #000;
+$banner-text: #fff;
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+.banner {
+    color: $banner-text;
+}
+.bg-light{
+  background:
+    /* top, transparent red */
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    /* bottom, image */
+    url(http://via.placeholder.com/1920x650);
+  /* background-image: url("http://via.placeholder.com/1920x650"); */
+  background-position: center center;
+  height:500px;
+}
+.btn {
+  border: 2px solid $btn-color;
+  border-radius: 20px;
+  font-weight: map-get($font-weights, bold);
+  text-transform: uppercase;
+  font-size:12px;
+  letter-spacing: 2px;
+}
+.card-footer{
+  background-color: rgba(0,0,0,0);
+  border-top: 0px solid rgba(0,0,0,.125);
+}
+.lead {
+  font-size: 1.9rem;
+}
+@media (max-width: 600px){
+  .bg-light {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),url(http://via.placeholder.com/600x600);
+    background-position: center center;
+  }
+}
+@media (min-width: 630px){
+  .accordion {
+    display: none;
+  }
+}
+@media (max-width: 630px){
+  .bd-example-tabs {
+    display: none;
+  }
+}
